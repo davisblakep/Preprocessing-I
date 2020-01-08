@@ -137,6 +137,7 @@ body {
 html {
   font-size: 62.5%;
 }
+/* LESS mixins and variables */
 /* Starting CSS Styling */
 h1 {
   font-size: 4rem;
