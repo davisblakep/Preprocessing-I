@@ -138,6 +138,15 @@ html {
   font-size: 62.5%;
 }
 /* LESS mixins and variables */
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.display-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* Starting CSS Styling */
 h1 {
   font-size: 4rem;
@@ -155,7 +164,7 @@ header nav {
   background-color: white;
 }
 header nav a {
-  font-size: 2rem;
+  font-size: 1.9rem;
   padding: 4%;
   text-decoration: none;
   color: dimgray;
@@ -180,7 +189,7 @@ header div.gray-box-container div.header-text h1 {
   margin-bottom: 3%;
 }
 header div.gray-box-container div.header-text p {
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 header div.gray-box-container div.header-text #sub-heading-1 {
   padding-bottom: 2%;
@@ -191,7 +200,7 @@ header div.gray-box-container div.header-text #sub-heading-2 {
 }
 header div.gray-box-container div.header-text button {
   margin-top: 3%;
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 .middle-section {
   display: flex;
@@ -201,10 +210,10 @@ header div.gray-box-container div.header-text button {
 }
 .middle-section div {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
   width: 47%;
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 .middle-section .listen-up-column h2 {
   font-size: 3rem;
@@ -219,7 +228,7 @@ header div.gray-box-container div.header-text button {
 }
 .work-history {
   margin-top: 12%;
-  height: 40vh;
+  height: 45vh;
 }
 .work-history h3 {
   font-size: 3rem;
@@ -237,12 +246,15 @@ header div.gray-box-container div.header-text button {
   width: 25%;
 }
 .work-history .grid-container div h4 {
-  font-size: 2rem;
+  font-size: 1.9rem;
   padding: 4%;
 }
 .work-history .grid-container div p {
   font-size: 1.8rem;
   padding: 4%;
+}
+.work-history .grid-container div .wh-years-column {
+  width: 15%;
 }
 .work-history .grid-container .wh-top-row {
   border-top: 0.5px solid dimgray;

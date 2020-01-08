@@ -71,8 +71,18 @@ html {
 
 @secondary-color: white;
 
+@main-font-size: 1.9rem;
 
-@main-font-size: 2rem;
+.space-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.display-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 
 /* Starting CSS Styling */
@@ -139,16 +149,14 @@ header {
 }
 
 .middle-section {
-	display: flex;
-	justify-content: space-between;
+	.space-between();
 	height: 48vh;
 	margin-top: 4%;
 	
 	
 		div {
-			display: flex;
+			.space-between();
 			flex-direction: column;
-			justify-content: space-between;
 			width: 47%;
 			font-size: @main-font-size;
 			
@@ -172,13 +180,12 @@ header {
 
 .work-history {
 	margin-top: 12%;
-	height: 40vh;
+	height: 45vh;
 		h3 {
 			font-size: 3rem;
 		}
 		.grid-container {
-			display: flex;
-			justify-content: space-between;
+			.space-between();
 			margin-top: 3%;
 			height: 22vh;
 			
@@ -187,6 +194,7 @@ header {
 					flex-direction: column;
 					justify-content: space-evenly;
 					width: 25%;
+					
 						h4 {
 							font-size: @main-font-size;
 							padding: 4%;
@@ -196,6 +204,9 @@ header {
 							font-size: 1.8rem;
 							padding: 4%;
 						
+						}
+						.wh-years-column {
+							width: 15%;
 						}
 						
 				}
@@ -221,7 +232,5 @@ footer {
 	background-color: @primary-color;
 	color: @secondary-color;
 	font-size: 1.5rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	.display-center();
 }
