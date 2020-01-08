@@ -142,7 +142,8 @@ h1 {
   font-size: 4rem;
 }
 .container {
-  margin: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 header {
   background-color: dimgray;
@@ -214,4 +215,42 @@ header div.gray-box-container div.header-text button {
 .middle-section .good-at-column .good-at-list {
   padding: 6%;
   border: 0.5px solid black;
+}
+.work-history {
+  margin-top: 12%;
+  height: 40vh;
+}
+.work-history h3 {
+  font-size: 3rem;
+}
+.work-history .grid-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+  height: 22vh;
+}
+.work-history .grid-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 25%;
+}
+.work-history .grid-container div h4 {
+  font-size: 2rem;
+  padding: 4%;
+}
+.work-history .grid-container div p {
+  font-size: 1.8rem;
+  padding: 4%;
+}
+.work-history .grid-container .wh-top-row {
+  border-top: 0.5px solid dimgray;
+}
+.work-history .grid-container .wh-apple-row {
+  background-color: dimgray;
+  color: white;
+}
+.work-history .grid-container .wh-amazon-row {
+  background-color: dimgray;
+  color: white;
 }
